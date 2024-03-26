@@ -1,6 +1,7 @@
 import json
 from nltk_x1 import tokenize
 from nltk_x1 import stem
+from nltk_x1 import bag_of_words
 
 
 # Corrected file path
@@ -29,3 +30,14 @@ all_words = [stem(w) for w in all_words if w not in ignore_words]
 all_words = sorted(set(all_words))
 tags = sorted(set(tags))
 print(tags)
+
+X_train = []
+y_train = []
+
+for (pattern_sentence, tag) in xy:
+    bag = bag_of_words(pattern_sentence, all_words)
+    X_train.append(bag)
+
+    label = tags.index(tag)
+    y_train.append(label)
+    
