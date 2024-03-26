@@ -35,7 +35,7 @@ X_train = []
 y_train = []
 
 for (pattern_sentence, tag) in xy:
-    bag = bag_of_words(pattern_sentence, all_words)
+    bag = bag_of_words(pattern_sentence, all_words)  # Fix: Assign the result of bag_of_words to bag_1
     X_train.append(bag)
 
     label = tags.index(tag)
