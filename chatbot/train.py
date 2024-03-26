@@ -41,3 +41,4 @@ for (pattern_sentence, tag) in xy:
     label = tags.index(tag)
     y_train.append(label)
     
+
