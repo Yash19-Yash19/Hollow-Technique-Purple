@@ -1,1 +1,0 @@
-open('intents.json', 'r', encoding='utf-8')
