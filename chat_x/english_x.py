@@ -6,7 +6,7 @@ import colorama  # Importing colorama for colorful console outputs
 colorama.init(autoreset=True)
 
 # Define an English phrase to be translated
-english_phrase = "Did you subscribe to my channel?"
+english_phrase = "One piece is an anime series that has been running for over 20 years."
 
 # Use the translate function to translate the English phrase to Hindi
 # Parameters: source text, target language code ("hi" for Hindi), source language code ("auto" for automatic detection)
